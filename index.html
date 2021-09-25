@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- -------- devolped by "http://kareem-shahhat.me" -------- -->
+
+        <!-- font awesome lib -->
+        <link rel="stylesheet" href="lib/fontawsom/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/fontawsom/all.min.css">
+        <!-- bootsrab -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- icon -->
+        <link rel="icon" href="img/icon.png">
+        <!-- swiper lib -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Resto</title>
+    </head>
+
+    <body>
+
+        <!--########## start navbar ##########-->
+        <nav class="navbar_1">
+            <div class="logo">
+                <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+            </div>
+            <div class="links">
+                <ul class="link">
+                    <li><a class="active" href="#">home</a></li>
+                    <li><a href="#">dishes</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">review</a></li>
+                    <li><a href="#">order</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li class="hambrger"><i class="fas fa-bars"></i></li>
+                    <li class="search" id="searchBtn"><i class="fas fa-search"></i></li>
+                    <li id="cartBtn"><i class="fas fa-shopping-cart"></i></li>
+                    <li id="personBtn"><i class="fas fa-user-alt"></i></li>
+                </ul>
+            </div>
+
+            <!-- search form -->
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="Search here">
+                <label for="" class="fas fa-search"></label>
+            </form>
+
+            <!-- shopping card form -->
+            <div class="shoping_card">
+                <div class="box">
+                    <img src="img/home-img-3.png" alt="">
+                    <div class="content">
+                        <h4>hot pizza</h4>
+                        <span>$23.99/- Qty : 1</span>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="box">
+                    <img src="img/home-img-1.png" alt="">
+                    <div class="content">
+                        <h4>spicy noodles</h4>
+                        <span>$9.50/- Qty : 1</span>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="box">
+                    <img src="img/home-img-2.png" alt="">
+                    <div class="content">
+                        <h4>fried chicken</h4>
+                        <span>$14.9/- Qty : 1</span>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="box1">
+                    <h3>Total : $19.69/-</h3>
+                </div>
+                <a href="#">Check Out</a>
+            </div>
+
+            <!-- personal info form -->
+            <div class="person_info">
+                <h3>LOGIN NOW</h3>
+                <div class="box">
+                    <input type="email" placeholder="Your Emial">
+                    <input type="password" placeholder="Your password">
+                </div>
+                <div class="bxx">Forget Your Password <a href="#">Click Here</a></div>
+                <div class="bxx">Don't Have An Account <a href="#">Create Now</a></div>
+                <a href="#" class="alink">Log In Now</a>
+            </div>
+
+        </nav>
+
+        <!--######## end navbar ########-->
+
+        <!-- *********** start hero ************ -->
+        <div class="hero col-lg-12 col-sm swiper mySwiper" id="hero">
+            <!-- <div class="container"> -->
+                <div class="wrapper swiper-wrapper">
+
+                    <div class="slide swiper-slide">
+                        <div class="img">
+                            <img src="img/home-img-1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <span>our special dish</span>
+                            <h3>spicy noodles</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <div class="img">
+                            <img src="img/home-img-2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <span>our special dish</span>
+                            <h3>fried chicken</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <div class="img">
+                            <img src="img/home-img-3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <span>our special dish</span>
+                            <h3>hot pizza</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- -- -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            <!-- </div> -->
+        </div>
+        <!-- *********** end hero ************ -->
+
+        <!---------- satrt DISHES ----------------->
+        <div class="dishes col-lg-12 col-sm ">
+            <!-- <div class="container"> -->
+                <div class="title_box">
+                    <span>Our Dishes</span>
+                    <h3 class="heading">POPULAR DISHES</h3>
+                </div>
+                <div class="dishes_container row">
+
+                    <div class="box">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="btn_rh"><i class="fas fa-eye"></i></a>
+                        <img src="img/dish-1.png" alt="">
+                        <h3>Tasty Food</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <span>$15.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="btn_rh"><i class="fas fa-eye"></i></a>
+                        <img src="img/dish-2.png" alt="">
+                        <h3>Tasty Food</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <span>$15.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="btn_rh"><i class="fas fa-eye"></i></a>
+                        <img src="img/dish-3.png" alt="">
+                        <h3>Tasty Food</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <span>$15.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="btn_rh"><i class="fas fa-eye"></i></a>
+                        <img src="img/dish-4.png" alt="">
+                        <h3>Tasty Food</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <span>$15.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="btn_rh"><i class="fas fa-eye"></i></a>
+                        <img src="img/dish-5.png" alt="">
+                        <h3>Tasty Food</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <span>$15.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="btn_rh"><i class="fas fa-eye"></i></a>
+                        <img src="img/dish-6.png" alt="">
+                        <h3>Tasty Food</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <span>$15.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                </div>
+            <!-- </div> -->
+        </div>
+        <!---------- end DISHES ----------------->
+
+        <!-- ############ start about ############ -->
+        <div class="about">
+            <div class="container">
+                <div class="title_box">
+                    <span>About Us</span>
+                    <h3 class="heading">WHY CHOOSE US?</h3>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="img/about-img.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Best Food In The Country</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore, Sequi Corrupti Corporis Quaerat Voluptatem Ipsam Neque Labore Modi Autem, Saepe Numquam Quod Reprehenderit Rem? Tempora Aut Soluta Odio Corporis Nihil!</p>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Aperiam, Nemo. Sit Porro Illo Eos Cumque Deleniti Iste Alias, Eum Natus.</p>
+                        <div class="box1">
+                            <div class="icon"><i class="fas fa-shipping-fast"></i> Free Delivery</div>
+                            <div class="icon"><i class="fas fa-dollar-sign"></i> Easy Payments</div>
+                            <div class="icon"><i class="fas fa-headset"></i> 24/7 Service</div>
+                        </div>
+                        <a href="" class="abtm">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ############ end about ############ -->
+
+        <!-- ------------- start Menu ------------- -->
+        <div class="menu col-lg-12 col-sm">
+            <div class="title_box">
+                <span>Our Menu</span>
+                <h3 class="heading">TODAY'S SPECIALITY</h3>
+
+                <div class="box_container col-lg-12 col-sm row">
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-1.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-2.jpg"  alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-3.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-4.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-5.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-6.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-7.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-8.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                    <div class="box col-lg-4">
+                        <a href="#" class="btn_lf"><i class="fas fa-heart"></i></a>
+                        <img src="img/menu-9.jpg" alt="">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                        </ul>
+                        <h3>Delicious Food</h3>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</p>
+                        <span>$12.99</span>
+                        <a href="" class="abtm">add to cart</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ------------- end Menu ------------- -->
+
+        <!-- ************** start testmonials *************** -->
+        <div class="testmonials">
+            <div class="title_box">
+                <span>Customer's Review</span>
+                <h3 class="heading">WHAT THEY SAY</h3>
+            </div>
+        </div>
+        <!-- ************** end testmonials *************** -->
+
+        <!-- wow lib -->
+        <script src="lib/wow/wow.min.js"></script>
+        <!-- bootstrap lib -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- swiber lib -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <!-- main js -->
+        <script src="js/script.js"></script>
+        <script> new WOW().init();</script>
+
+        <!-- Devolped By "http://kareem-shahhat.me" -->
+    </body>
+
+</html>
