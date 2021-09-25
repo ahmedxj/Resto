@@ -655,6 +655,9 @@ nav .links .link .active{
 }
 /* ---- media screen for phone ----- */
 @media(max-width: 768px){
+  .about{
+        overflow: hidden;
+    }
     .about .container .box img{
         width: 300px;
     }
