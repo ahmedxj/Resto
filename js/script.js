@@ -52,4 +52,42 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    loop:true,
 });
+
+
+var swiper = new Swiper(".test-slider", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    loop:true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+//  ------- scroll top btn -------
+window.addEventListener('scroll',function(){
+    var scroll = document.querySelector('.backtop');
+    scroll.classList.toggle("active" , window.scrollY>500);
+})	
+
+function scrolltotp(){
+	window.scrollTo({top:0,
+	behavior:'smooth'
+	})
+}

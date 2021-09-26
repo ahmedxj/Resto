@@ -447,6 +447,7 @@ nav .links .link .active{
 }
 .hero .slide img{
     cursor: alias;
+    object-fit: cover; /* <------------- */
 }
 .hero .slide .content p{
     color: #777;
@@ -467,6 +468,55 @@ nav .links .link .active{
 }
 .hero .slide .content{
     margin-left: 20px;
+}
+
+/**---------  back to yop btn ---------*/
+
+.backtop i {
+    color: #fff;
+    font-size: 20px;
+}
+.icofont-long-arrow-up::before {
+    font-family: 'Font Awesome 5 Free';
+    content: url(../img/up.png);
+}
+.backtop {
+    transition: 0.4s;
+    position: fixed;
+    background: var(--color2);
+    z-index: 9999;
+    display: inline-block;
+    right: -100px;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    border-radius: 50px;
+	box-shadow: 5px 6px 10px #00000063;
+}
+
+.backtop:hover{
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+}
+.hero .active {
+    transition: all .3s;
+    cursor: pointer;
+    /* opacity: 1; */
+    right: 40px;
+}
+/* scroll btn */
+@media(max-width: 767px){
+    .hero .active {
+        right: 30px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
 }
 /* ---- media screen for phone ----- */
 @media(max-width: 768px){
@@ -608,6 +658,7 @@ nav .links .link .active{
 /* ------------ start about ------------ */
 .about{
     padding-top: 20px;
+    overflow: hidden;
 }
 .about .container .box{
     display: flex;
@@ -655,9 +706,6 @@ nav .links .link .active{
 }
 /* ---- media screen for phone ----- */
 @media(max-width: 768px){
-  .about{
-        overflow: hidden;
-    }
     .about .container .box img{
         width: 300px;
     }
@@ -761,3 +809,77 @@ nav .links .link .active{
 /* end media screen for tablet */
 
 /************** end Menu ***************/
+
+/* ----------------- start testmonials ----------------- */
+.testmonials{
+    
+    min-height: auto;
+}
+.testmonials .swiper-wrapper{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 100%;
+}
+.testmonials .swiper-container{
+    overflow-x: hidden;
+}
+.testmonials .swiper-wrapper .swiper-slide{
+    /* width: 33.333%; */
+    border: 1px solid #ccc;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 10%); 
+    border-radius: 5px;
+    position: relative;
+}
+.testmonials .swiper-wrapper .swiper-slide .fa-quote-right{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 4.5rem;
+    color: #ccc;
+}
+.testmonials .swiper-wrapper .swiper-slide .user{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.testmonials .swiper-wrapper .swiper-slide .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testmonials .swiper-wrapper .swiper-slide .user .stars{
+    color: var(--color1);
+    font-size: 1rem;
+}
+.testmonials .swiper-wrapper .swiper-slide .user h3{
+    color: var(--color2);
+    font-weight: 600;
+}
+.testmonials .swiper-wrapper p{
+    color: rgb(99, 99, 99);
+}
+@media (min-width: 576px){
+/* .col-sm { */
+    .testmonials.col-sm{
+        flex-basis: 100%;
+        /* flex-basis: auto; */
+    }
+}
+/* ---- media screen for phone ----- */
+@media(max-width: 768px){
+    /* .testmonials .swiper-container{
+        overflow-x: scroll;
+    } */
+}
+/* ---- media screen for phone ----- */
+/* ----------------- end testmonials ----------------- */
+
+/* ================= start order ================= */
+.order{
+    background-color: #eee;
+}
+/* ================= end order ================= */
