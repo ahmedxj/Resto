@@ -120,7 +120,7 @@ nav .hambrger{
     transition: 0.3s;
 }
 nav .logo{
-    text-shadow: 2px 4px 2px #00000059;
+    text-shadow: 2px 4px 4px #00000059;
     font-weight: 600;
     font-size: 1.7rem;
     color: var(--color2);
@@ -415,7 +415,8 @@ nav .links .link .active{
     background-color: var(--color1);
     border-radius: 5px;
     color: white;
-    box-shadow: 4px 5px 2px 0 #00000061;
+    /* box-shadow: 4px 5px 2px 0 #00000061; */
+    box-shadow: 4px 4px 5px 0 #00000061;
 }
 /* -------------- end navbar ------------- */
 
@@ -447,7 +448,7 @@ nav .links .link .active{
 }
 .hero .slide img{
     cursor: alias;
-   /* object-fit: cover;  <------------- */
+    object-fit: cover; /* <------------- */
 }
 .hero .slide .content p{
     color: #777;
@@ -807,6 +808,24 @@ nav .links .link .active{
     
 }
 /* end media screen for tablet */
+@media (min-width: 576px){
+    .menu.col-sm {
+    -ms-flex-preferred-size: 0;
+    flex-basis: auto;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+}
+@media (min-width: 576px){
+    .col-sm {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
 
 /************** end Menu ***************/
 
@@ -874,6 +893,10 @@ nav .links .link .active{
     /* .testmonials .swiper-container{
         overflow-x: scroll;
     } */
+    .testmonials .swiper-wrapper .swiper-slide .user img{
+        height: 5rem;
+        width: 5rem;
+    }
 }
 /* ---- media screen for phone ----- */
 /* ----------------- end testmonials ----------------- */
@@ -881,5 +904,151 @@ nav .links .link .active{
 /* ================= start order ================= */
 .order{
     background-color: #eee;
+    padding-bottom: 20px;
 }
+.order .container .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.order .container .form .input_box{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.order .container .form .input_box .box ,.order .container .form .input_box .box2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 10px;
+}
+.order .container .form .input_box .box input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    outline: none;
+}
+.order .container .form .input_box .box2 textarea{
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    outline: none;
+}
+.order .container .form .input_box span{
+    margin-bottom: 10px;
+}
+
+/* ---- media screen for phone ----- */
+@media(max-width: 768px){
+    .order .container .form .input_box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* ---- media screen for phone ----- */
 /* ================= end order ================= */
+
+/*############ Start footer ###########*/
+.footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--color1);
+}
+.footer .box_contain {
+    /* max-width: 1200px; */
+    display: flex;
+    justify-content: center;
+    border-bottom:2px solid #ccc ;
+    padding-bottom: 20px;
+}
+.footer .box_contain .box{
+    flex-basis: 19%;
+}
+.footer .box_contain .box4{
+    flex-basis: 25%;
+}
+.footer .box_contain .box .titlee{
+    margin-bottom: 20px;
+    color: var(--color2);
+    font-weight: 600;
+}
+.footer .box_contain .box .titlee i{
+    color: var(--color1);
+}
+.footer .box_contain .box .lin{
+    display: flex;
+}
+.footer .box_contain .box .lin i{
+    border-radius: 50%;
+    background-color: var(--color3);
+    padding: 14px 15px;
+    margin-right: 10px;
+    transition: 0.3s;
+    color: var(--color2);
+}
+.footer .box_contain .box p{
+    max-width: 293px;
+    color: #777;
+}
+.footer .box_contain .box .lin i:hover{
+    color: #fff;
+    background: var(--color1);
+    transform: rotate(360deg);
+}
+.footer .box_contain .box .cvd li{
+    margin-bottom: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.footer .box_contain .box .cvd li i{
+    transition: 0.3s;
+}
+.footer .box_contain .box .cvd li:hover i{
+    /* color: var(--color1); */
+    margin-right: 20px;
+}
+.footer .box_contain .box input{
+    outline: none;
+    background-color: #eee;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.footer .box_contain .box .cvd i{
+    color: var(--color1);
+    margin-right: 8px;
+}
+.copy_right{
+    margin-top: 15px;
+    text-align: center;
+    color: var(--color2);
+    font-size: 1.2rem;
+}
+.copy_right a{
+    text-decoration: underline;
+    color: var(--color1);
+}
+@media(max-width: 768px){
+    .footer .box_contain {
+        flex-direction: column;
+    }
+    .footer .box_contain .box{
+        margin-bottom: 20px;
+    }
+}
+/* ---- media screen for phone ----- */
+/*############ End footer ###########*/

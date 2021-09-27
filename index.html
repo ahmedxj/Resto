@@ -32,11 +32,11 @@
             <div class="links">
                 <ul class="link">
                     <li><a class="active" href="#">home</a></li>
-                    <li><a href="#">dishes</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">review</a></li>
-                    <li><a href="#">order</a></li>
+                    <li><a href="#dishes">dishes</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#testmonials">review</a></li>
+                    <li><a href="#order">order</a></li>
                 </ul>
             </div>
             <div class="social">
@@ -103,7 +103,7 @@
         <!--######## end navbar ########-->
 
         <!-- *********** start hero ************ -->
-        <div class="hero col-lg-12 col-sm swiper mySwiper" id="hero">
+        <div class="hero col-lg-12 col-sm swiper mySwiper sec" id="hero">
             <!-- <div class="container"> -->
                 <div class="wrapper swiper-wrapper">
 
@@ -157,7 +157,7 @@
         <!-- *********** end hero ************ -->
 
         <!---------- satrt DISHES ----------------->
-        <div class="dishes col-lg-12 col-sm ">
+        <div class="dishes col-lg-12 col-sm sec" id="dishes">
             <!-- <div class="container"> -->
                 <div class="title_box">
                     <span>Our Dishes</span>
@@ -267,7 +267,7 @@
         <!---------- end DISHES ----------------->
 
         <!-- ############ start about ############ -->
-        <div class="about">
+        <div class="about sec" id="about">
             <div class="container">
                 <div class="title_box">
                     <span>About Us</span>
@@ -294,7 +294,7 @@
         <!-- ############ end about ############ -->
 
         <!-- ------------- start Menu ------------- -->
-        <div class="menu col-lg-12 col-sm">
+        <div class="menu col-lg-12 col-sm sec" id="menu">
             <div class="title_box">
                 <span>Our Menu</span>
                 <h3 class="heading">TODAY'S SPECIALITY</h3>
@@ -451,7 +451,7 @@
         <!-- ------------- end Menu ------------- -->
 
         <!-- ************** start testmonials *************** -->
-        <div class="testmonials col-lg-12 col-sm-12">
+        <div class="testmonials col-lg-12 col-sm-12 sec" id="testmonials">
             <!-- <div class="container"> -->
             <div class="title_box">
                 <span>Customer's Review</span>
@@ -521,7 +521,7 @@
         <!-- ************** end testmonials *************** -->
 
         <!-- ########### start order ############### -->
-        <div class="order">
+        <div class="order sec" id="order">
             <div class="container">
                 <div class="title_box">
                     <span>Order Now</span>
@@ -529,30 +529,100 @@
                 </div>
                 <div class="form">
                     <div class="input_box">
-                        <input type="text">
-                        <input type="number">
+                        <div class="box">
+                            <span>Your Name</span>
+                            <input type="text" placeholder="Inter Your Name">
+                        </div>
+                        <div class="box">
+                            <span>Your Number</span> 
+                            <input type="number" placeholder="Inter Your Number">
+                        </div>
                     </div>
+
                     <div class="input_box">
-                        <input type="text">
-                        <input type="text">
+                        <div class="box">
+                            <span>Your Order</span>
+                            <input type="text" placeholder="Inter Your Food Name">
+                        </div>
+                        <div class="box">
+                            <span>Additional Food</span>
+                            <input type="text" placeholder="Extra With Food">
+                        </div>
                     </div>
+
                     <div class="input_box">
-                        <input type="number">
-                        <input type="text">
+                        <div class="box">
+                            <span>How Musch</span>
+                            <input type="number" placeholder="How Many Order">
+                        </div>
+                        <div class="box">
+                            <span>Date And Time</span>
+                            <input type="datetime-local">
+                        </div>
                     </div>
+
                     <div class="input_box">
-                        <input type="text">
-                        <input type="datetime-local">
+                        <div class="box2">
+                            <span>Your Address</span>
+                            <textarea name="" id="" placeholder="Inter Your Address"></textarea>
+                        </div>
+                        <div class="box2">
+                            <span>Your Message</span>
+                            <textarea name="" id="" placeholder="Inter Your Message"></textarea>
+                        </div>
                     </div>
-                    <div class="input_box">
-                        <textarea name="" id=""></textarea>
-                        <textarea name="" id=""></textarea>
-                    </div>
+
                     <a href="" class="abtm">Order Now</a>
                 </div>
             </div>
         </div>
         <!-- ########### end order ############### -->
+
+        <!-- ============== start footer ============== -->
+        <div class="footer col-lg-12 col-sm">
+            <div class="box_contain col-lg-12 col-sm">
+                <div class="box box4">
+                    <h3 class="titlee"><i class="fas fa-utensils"></i>Resto.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquam?</p>
+                    <ul class="lin">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 class="titlee">Contact Info</h3>
+                    <ul class="cvd">
+                        <li><i class="fas fa-phone"></i> +123-456-7890 </li>
+                        <li><i class="fas fa-phone"></i> +111-222-3333 </li>
+                        <li><i class="fas fa-envelope"></i> Resto12@gmail.com </li>
+                        <li><i class="fas fa-map-marker-alt"></i> Cairo, Egypt - 400104 </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 class="titlee">Quick Link</h3>
+                    <ul class="cvd">
+                        <li><i class="fas fa-arrow-right"></i> home </li>
+                        <li><i class="fas fa-arrow-right"></i> features </li>
+                        <li><i class="fas fa-arrow-right"></i> products </li>
+                        <li><i class="fas fa-arrow-right"></i> categories </li>
+                        <li><i class="fas fa-arrow-right"></i> Blog </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 class="titlee">Newsletter</h3>
+                    <p>Supscribe For Latest Update</p>
+                    <input type="text" placeholder="Your Email">
+                    <a href=""></a>
+                    <img src="img/payment.png" alt="">
+                </div>
+            </div>
+            <div class="copy_right">
+                Copyright @ 2021 By <a href="http://kareem-shahhat.me"> kareem shahhat</a>
+            </div>
+        </div>
+        <!-- ============== end footer ============== -->
 
         <!-- wow lib -->
         <script src="lib/wow/wow.min.js"></script>
@@ -566,7 +636,7 @@
         <script src="js/script.js"></script>
         <script> new WOW().init();</script>
 
-        <!-- Devolped By "http://kareem-shahhat.me" -->
+        <!-- Devolped By " http://kareem-shahhat.me " -->
     </body>
 
 </html>

@@ -37,6 +37,33 @@ toggle_btn.onclick = () =>{
     shopingForm.classList.remove("active2")
 }
 
+
+//--------------------
+
+let section = document.querySelectorAll(".sec");
+let navlink = document.querySelectorAll("nav .links ul li a");
+
+window.onscroll = () =>{
+    // // xl.classList.remove('fa-times');
+    menu.classList.remove("active");
+
+    section.forEach(sec =>{
+        let top = window.scrollY;
+        let height = sec.offsetHeight;
+        let offset = sec.offsetTop - 150;
+        let id = sec.getAttribute('id');
+
+        if(top => offset && top < offset + height ){
+            navlink.forEach(links=>{
+                links.classList.remove('active');
+                document.querySelector('nav .links ul a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+}
+
+//---------------------
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
