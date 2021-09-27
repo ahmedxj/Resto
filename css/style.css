@@ -448,7 +448,7 @@ nav .links .link .active{
 }
 .hero .slide img{
     cursor: alias;
-    object-fit: cover; /* <------------- */
+   /* object-fit: cover;  <------------- */
 }
 .hero .slide .content p{
     color: #777;
