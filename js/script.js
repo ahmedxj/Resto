@@ -110,7 +110,9 @@ var swiper = new Swiper(".test-slider", {
 //  ------- scroll top btn -------
 window.addEventListener('scroll',function(){
     var scroll = document.querySelector('.backtop');
+    var hed = document.querySelector('nav');
     scroll.classList.toggle("active" , window.scrollY>500);
+    hed.classList.toggle("active22" , window.scrollY>900);
 })	
 
 function scrolltotp(){
